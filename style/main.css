@@ -1,0 +1,44 @@
+/* Folha de estilo. Aqui dentro do CSS é feito toda a formatação de estilo*/
+
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+/* reset: Cada navegador tem um comportamento diferente, o reset força os navegadores a terem o mesmo comportamento */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif; /*Fonte principal e suplentes*/
+}
+
+
+header.conteiner{
+    display:flex; /*flexbox maneira alinhar os elementos em tela */
+    flex-direction: row; /*por padrão o display flex já vem formatado por flex direction, tende a jogar tudo pra linha */
+    align-items: center;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho); 
+    font-family: 'Arial Black';
+    font: size 40px; /*tamanho da fonte*/
+    align-items: center; /*alinha o elemento na vertical*/
+    justify-content: space-between;
+
+}
+
+header nav a{
+    text-decoration: none; /*definir a formatação de  underline, overline, line-through ou blink.*/
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*Evento hover, quando o mouse esta em cima do link, o conteúdo terá alguma alteração. No caso desse código,  texto ficará mais claro ao passar o mouse por cima*/
+    color: #fff;
+}
